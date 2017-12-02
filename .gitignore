@@ -1,0 +1,6 @@
+/WebRoot/META-INF/*.*
+*.iml
+*.eml
+out/*
+.*/*
+target/*
