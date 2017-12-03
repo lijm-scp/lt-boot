@@ -53,6 +53,7 @@ public class TestMysql {
 
         User user = new User();
         user.setName("user1");
+        user.setCreatedate(new Date());
         user.setDeparment(deparment);
         user.setRoles(roles);
         List<User> users = userRepository.findAll();

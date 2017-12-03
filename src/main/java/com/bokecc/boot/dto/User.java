@@ -4,9 +4,13 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * Created by lijm on 2017/12/2.
+ */
 @Entity
 @Table(name = "user")
 public class User implements java.io.Serializable{

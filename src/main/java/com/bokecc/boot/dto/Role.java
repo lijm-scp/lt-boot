@@ -1,10 +1,14 @@
 package com.bokecc.boot.dto;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
+/**
+ * Created by lijm on 2017/12/2.
+ */
 @Entity
 @Table(name = "role")
-public class Role implements java.io.Serializable{
+public class Role implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
