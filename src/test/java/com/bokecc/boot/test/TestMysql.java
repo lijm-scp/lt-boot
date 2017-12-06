@@ -1,6 +1,6 @@
 package com.bokecc.boot.test;
 
-import com.bokecc.boot.dao.DeparmentRepository;
+import com.bokecc.boot.dao.DepartmentRepository;
 import com.bokecc.boot.dao.RoleRepository;
 import com.bokecc.boot.dao.UserRepository;
 import com.bokecc.boot.dto.Department;
@@ -34,7 +34,7 @@ public class TestMysql {
     @Autowired
     UserRepository userRepository;
     @Autowired
-    DeparmentRepository deparmentRepository;
+    DepartmentRepository deparmentRepository;
     @Autowired
     RoleRepository roleRepository;
 
