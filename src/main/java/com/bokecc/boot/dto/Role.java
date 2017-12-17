@@ -1,35 +1,45 @@
 package com.bokecc.boot.dto;
 
-import javax.persistence.*;
 import java.io.Serializable;
 
 /**
- * Created by lijm on 2017/12/2.
+ * Created by lijm on 2017/12/16.
  */
-@Entity
-@Table(name = "role")
-public class Role implements Serializable{
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String name;
+public class Role implements Serializable {
+    private long id;
+    private String roleName;
+    private String note;
 
-    public Role() {
-    }
-
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getRoleName() {
+        return roleName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setRoleName(String roleName) {
+        this.roleName = roleName;
+    }
+
+    public String getNote() {
+        return note;
+    }
+
+    public void setNote(String note) {
+        this.note = note;
+    }
+
+    @Override
+    public String toString() {
+        return "Role{" +
+                "id=" + id +
+                ", roleName='" + roleName + '\'' +
+                ", note='" + note + '\'' +
+                '}';
     }
 }

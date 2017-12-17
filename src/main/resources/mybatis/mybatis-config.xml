@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <!--全局设置,并不灵活,不能指定哪些属性立即加载,哪些属性延迟加载-->
+        <!--延迟加载-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!--false为按要求延迟加载,true为按层级延迟加载,即同一级的一并加载-->
+        <setting name="aggressiveLazyLoading" value="false"/>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+    <typeAliases>
+        <package name="com.bokecc.boot.dto"/>
+    </typeAliases>
+</configuration>
